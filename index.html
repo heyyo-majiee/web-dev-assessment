@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>BTS Discography</title>
+    <link href="images/icon2.png">
+</head>
+
+<body class="bground">
+    <!-- Title Bar -->
+    <div class="topbar">   
+        <div class="title">
+            <img id="logo" src="images/bts-logo-1.png">
+        <div class="menubar"> 
+            <ul id="list">
+                <a href="index.html" target="_self"><li>Products</li></a>
+                <a href="about.html" target="_self"><li>About</li></a>
+            </ul>
+            <div>
+            <img id="myBtn" src="images/cart.png" type="button">
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div>
+                        <img src="images/icon2.png" width="55px" height="60px">
+                        <span class="close">&times;</span>
+                        </div>
+                        <!-- Cart -->
+                        <div class="cartContainer">
+                            <div class="row">
+                                <div class="heading">Product</div>
+                                <div class="heading">Title</div>
+                                <div class="heading">Price</div>
+                                <div class="heading">Action</div>
+                            </div>
+                        </div>
+
+                        <div class="row totalPrice">
+                            <div class="price1"> </div>
+                            <div class="price1"> </div>
+
+                            <div class="price1 headingTop"> Total: Php </div>
+                            <div class="price1 headingTop cartTotalPrice"> 0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    
+    <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="images/banner-1.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/banner-2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/banner-3.jpg" style="width:100%">
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+    <!-- Products -->
+    <div class="row">
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/be.jpg" alt="be">
+            </div>
+                <div class=" productTitle">
+                    <p> Be </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 4,550 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/dynamite.jpg" alt="Dynamite">
+            </div>
+                <div class=" productTitle">
+                    <p> Dynamite </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 3,670 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/mop7.jpg" alt="Map of Seoul 7">
+            </div>
+                <div class=" productTitle">
+                    <p> Map of Seoul 7 </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 3,670 </p>
+                 </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+            </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/mospersona.jpg" alt="Map of Seoul: Persona">
+            </div>
+                <div class=" productTitle">
+                    <p> Map of Seoul: Persona </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 900 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/ly-answer.jpg" alt="LY: Answer">
+            </div>
+                <div class=" productTitle">
+                    <p> LY: Answer </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 1,030 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/ly-tear.jpg" alt="LY: Tear">
+            </div>
+                <div class=" productTitle">
+                    <p> LY: Tear </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 955 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/ly-her.jpg" alt="LY: Her">
+            </div>
+                <div class=" productTitle">
+                    <p> LY: Her </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 920 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/you-never-walk-alone.jpg" alt="You Never Walk Alone">
+            </div>
+                <div class=" productTitle">
+                    <p> You Never Walk Alone </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 1,100 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/wings.jpg" alt="Wings">
+            </div>
+                <div class=" productTitle">
+                    <p> Wings</p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 880 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/hyyh-young-forever.jpg" alt="HYYH: Young Forever">
+            </div>
+                <div class=" productTitle">
+                    <p> HYYH: Young Forever </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 1,230 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/hyyh-pt1.jpg" alt="HYYH Pt.1">
+            </div>
+                <div class=" productTitle">
+                    <p> HYYH Pt.1 </p>
+                </div>
+                <div class=" productPrice"> 
+                    <p> Php 875 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+        
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/hyyh-pt2.jpg" alt="HYYH Pt.2">
+            </div>
+                <div class=" productTitle">
+                    <p> HYYH Pt.2 </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 875 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+                
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/dark-n-wild.jpg" alt="Dark & Wild">
+            </div>
+                <div class=" productTitle">
+                    <p> Dark & Wild </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 960 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+                
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/skool-luv-affair.jpg" alt="Skool Luv Affair">
+            </div>
+                <div class=" productTitle">
+                    <p> Skool Luv Affair </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 850 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+                
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/o-ru2l8-2.jpg" alt="O! R2L8 2?">
+            </div>
+                <div class=" productTitle">
+                    <p> O! R2L8 2? </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 810 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+                
+        <div class="productContainer">
+          <div class="gallery">
+            <div class=" productImage">
+                <img class="img" src="images/2cool-4skool.jpg" alt="2 Skool 4 Skool">
+            </div>
+                <div class=" productTitle">
+                    <p> 2 Skool 4 Skool </p>
+                </div>
+                <div class=" productPrice">
+                    <p> Php 650 </p>
+                </div>
+                <div class="addToCartBtn" onclick="myFunction()">Add to Cart</div>
+          </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+
+    <div class="footer">
+        <p>BTS Discography by: Acera, Vilma Marjorie M. </p>
+    </div>
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+
+</html>
+
